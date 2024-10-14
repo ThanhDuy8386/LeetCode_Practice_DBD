@@ -3,7 +3,7 @@ import java.util.HashMap;
 
 public class B1_TwoSum {
     public static void main(String[] args) {
-        
+        System.out.println("cc");
     }
 
     public int[] twoSum(int[] nums, int target) {
