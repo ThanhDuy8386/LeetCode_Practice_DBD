@@ -1,17 +1,28 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class B26_RemoveDuplicateFeomSortArray {
+public class B27_RemoveElement {
     public static void main(String[] args) {
         int[] arr = new int[]{0,0,1,1,1,2,2,3,3,4};
-        System.out.println(removeDuplicates(arr));
     }
-    static int removeDuplicates(int[] nums) {
-        var map = new HashMap<Integer, Integer>();
+    public int removeElement(int[] nums, int val) {
+        var list = new ArrayList<Integer>();
+        int count = 0;
         for(int i = 0; i < nums.length; i++) {
-            map.put(nums[i],map.getOrDefault(nums[i],0)+1);
+            if(nums[i]!=val) {
+                list.add(nums[i]);
+            } else {
+                count++;
+            }
         }
-        var list = new ArrayList<Integer>(map.keySet());
+        for(int i = 0; i < nums.length; i++) {
+            if(i >= nums.length-count) {
+                nums[i] = val;
+            } else {
+                nums[i] = list.get(i);
+            }
+        }
         return list.size();
     }
+    //done
 }
