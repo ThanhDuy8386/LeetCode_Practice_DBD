@@ -14,7 +14,7 @@ public class B125_ValidPalindrome {
                 s1 += s.charAt(i);
             }
         }
-        System.out.println(s1.toLowerCase());
+        //System.out.println(s1.toLowerCase());
         String s2 = "";
         for (int i = s.length() - 1; i >= 0; i--) {
             if (s.charAt(i) >= 'a' && s.charAt(i) <= 'z' ||
@@ -24,10 +24,11 @@ public class B125_ValidPalindrome {
                 s2 += s.charAt(i);
             }
         }
-        System.out.println(s2.toLowerCase());
+        //System.out.println(s2.toLowerCase());
         if (s1.toLowerCase().equals(s2.toLowerCase())) {
             return true;
         }
         return false;
     }
+    //done
 }
