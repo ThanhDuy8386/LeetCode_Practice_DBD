@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 public class B203_RemoveLinkedListelements {
     public static void main(String[] args) {

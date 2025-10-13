@@ -1,9 +1,8 @@
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class B27_RemoveElement {
     public static void main(String[] args) {
-        int[] arr = new int[]{0,0,1,1,1,2,2,3,3,4};
+        
     }
     public int removeElement(int[] nums, int val) {
         var list = new ArrayList<Integer>();
